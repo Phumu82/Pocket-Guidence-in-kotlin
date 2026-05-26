@@ -57,20 +57,20 @@ The app was designed with students and young professionals in mind — people wh
 - 🎉 Goal completion celebration dialog
 - Dashboard shows average progress across all goals
 
-### 📊 Reports & Graphs *(Rubric Requirement)*
+### 📊 Reports & Graphs
 - **Pie chart** — spending breakdown by category
 - **Bar chart** — income vs expenses vs balance
 - **Savings progress bar chart** — current vs target per goal
 - **User-selectable date period** for all transaction views
 - Minimum and maximum spending goals displayed visually
 
-### 📈 Visual Goal Progress *(Rubric Requirement)*
+### 📈 Visual Goal Progress 
 - Per-category budget progress bars with colour coding (green → orange → red)
 - Goal progress bars showing % achieved
 - Savings calculator preview (daily/weekly/monthly amounts needed)
 - Dashboard summary card showing balance, income, and expenses
 
-### 🏅 Gamification *(Rubric Requirement)*
+### 🏅 Gamification 
 - **Quiz-based rewards** — complete financial literacy quizzes to earn R7–R10 per correct answer
 - Earnings are **deposited directly into your account balance** via Room DB
 - **Course completion tracking** with progress bars per course
