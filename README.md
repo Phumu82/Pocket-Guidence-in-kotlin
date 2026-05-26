@@ -24,7 +24,8 @@ The app was designed with students and young professionals in mind — people wh
 
 | Splash Screen | Login | Dashboard |
 |---|---|---|
-| ![Splash](screenshots/splash.png) | ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
+![Login](screenshots/login.png<img width="319" height="715" alt="Screenshot 2026-05-26 130404" src="https://github.com/user-attachments/assets/37aa4d91-038c-4408-b81e-f1d1577101f8" />
+) | ![Dashboard](screenshots/dashboard.png) |
 
 | Goals | Reports | Earn & Learn |
 |---|---|---|
