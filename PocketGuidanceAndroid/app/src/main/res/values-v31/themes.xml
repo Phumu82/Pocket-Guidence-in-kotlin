@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        On API 31+ Android provides the SplashScreen API natively.
+        These attributes configure the system splash screen that shows
+        BEFORE our Activity even starts — no flash, no white screen.
+    -->
+    <style name="Theme.PocketGuidance.Splash" parent="Theme.SplashScreen">
+
+        <!-- Full-bleed background colour of the splash screen -->
+        <item name="windowSplashScreenBackground">@color/primary</item>
+
+        <!-- The icon displayed in the centre (must be ≤ 288×288dp; shown at 192×192dp) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+
+        <!-- Optional: background behind the icon (for adaptive icon layering) -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/primary</item>
+
+        <!-- Branding image shown at the bottom (optional — remove if not needed) -->
+        <!-- <item name="windowSplashScreenBrandingImage">@drawable/ic_splash_branding</item> -->
+
+        <!-- How long to show the splash (only respected up to 1000ms by system) -->
+        <item name="windowSplashScreenAnimationDuration">800</item>
+
+        <!-- Theme to apply to the Activity AFTER the splash exits -->
+        <item name="postSplashScreenTheme">@style/Theme.PocketGuidance</item>
+
+    </style>
+</resources>

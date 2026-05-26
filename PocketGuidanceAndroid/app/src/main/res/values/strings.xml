@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Guidance</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="description">Description (optional)</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Sign Out</string>
+
+    <!-- Currencies for onboarding spinner -->
+    <string-array name="currencies">
+        <item>R (ZAR)</item>
+        <item>$ (USD)</item>
+        <item>€ (EUR)</item>
+        <item>£ (GBP)</item>
+    </string-array>
+    <string-array name="currency_codes">
+        <item>R</item>
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+    </string-array>
+</resources>

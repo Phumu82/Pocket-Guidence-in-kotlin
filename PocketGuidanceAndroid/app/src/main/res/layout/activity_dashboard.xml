@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back 👋"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pocket Guidance"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:background="@drawable/circle_primary_bg"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Balance card with gradient -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Balance"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:textColor="#AAFFFFFF"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tvIncome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R0.00"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expenses"
+                            android:textColor="#AAFFFFFF"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tvExpenses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R0.00"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Goal progress summary -->
+        <TextView
+            android:id="@+id/tvGoalProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_success_bg"
+            android:padding="10dp"
+            android:text="Savings Goals: 0% avg"
+            android:textColor="#166534"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Quick Action Grid -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Quick Actions"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAddExpense"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="➕" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add\nExpense" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewExpenses"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📋" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transactions" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBudgets"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💳" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budgets" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGoals"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Goals" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCategories"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏷️" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Categories" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProfile"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEarn"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📚" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Earn &amp;\nLearn" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReports"
+                style="@style/QuickActionCard"
+                android:layout_columnWeight="1">
+                <LinearLayout style="@style/QuickActionInner">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📈" android:textSize="26sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reports &amp;\nGoals" android:textSize="11sp" android:gravity="center" android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <!-- Pie Chart -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Spending by Category"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyle"
+            android:layout_marginBottom="16dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bar Chart -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Income vs Expenses vs Balance"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyle"
+            android:layout_marginBottom="24dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

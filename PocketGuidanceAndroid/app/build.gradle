@@ -1,0 +1,73 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+}
+
+android {
+    namespace = "com.pocketguidance"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.pocketguidance"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.recyclerview)
+
+    // Room
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    kapt(libs.androidx.room.compiler)
+
+    // Lifecycle
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.livedata)
+    implementation(libs.androidx.lifecycle.runtime)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Glide
+    implementation(libs.glide)
+    kapt(libs.glide.compiler)
+
+    // MPAndroidChart
+    implementation(libs.mpandroidchart)
+
+    // Splash Screen
+    implementation(libs.splashscreen)
+}
