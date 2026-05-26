@@ -21,115 +21,59 @@ The app was designed with students and young professionals in mind — people wh
 ---
 
 ## 📸 Screenshots
-```md
 # 📸 Screenshots
 
 ## 🔐 Authentication
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8499aed8-985a-4d62-80f2-f811ee3d81ad" width="230"/>
-</p>
-
-<p align="center">
-  <b>Login & Signup Screen</b>
-</p>
+![Login and Signup](https://github.com/user-attachments/assets/8499aed8-985a-4d62-80f2-f811ee3d81ad)
 
 ---
 
 ## 📊 Dashboard
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/53059c23-b2b5-47bd-b974-d919a8c4ba25" width="230"/>
-</p>
-
-<p align="center">
-  <b>Main Dashboard</b>
-</p>
+![Dashboard](https://github.com/user-attachments/assets/53059c23-b2b5-47bd-b974-d919a8c4ba25)
 
 ---
 
-## 💸 Transactions
+## 💸 Add Transactions
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/af67a445-3300-406d-9ca0-f0efe17a36fa" width="230"/>
-</p>
-
-<p align="center">
-  <b>Add Transactions Screen</b>
-</p>
+![Add Transactions](https://github.com/user-attachments/assets/af67a445-3300-406d-9ca0-f0efe17a36fa)
 
 ---
 
 ## 🗂️ Categories
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f54e2732-f183-4eed-b3a6-8a7e9d9ca30f" width="230"/>
-</p>
-
-<p align="center">
-  <b>Expense Categories</b>
-</p>
+![Categories](https://github.com/user-attachments/assets/f54e2732-f183-4eed-b3a6-8a7e9d9ca30f)
 
 ---
 
-## 🎯 Savings Goals
+## 🎯 Goals
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/662d7909-4580-4594-9c50-893117439b40" width="230"/>
-</p>
-
-<p align="center">
-  <b>Goals Tracking Screen</b>
-</p>
+![Goals](https://github.com/user-attachments/assets/662d7909-4580-4594-9c50-893117439b40)
 
 ---
 
 ## 💳 Budgets
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5c66c667-140e-4606-a818-cb6aafd5cbc7" width="230"/>
-</p>
-
-<p align="center">
-  <b>Budget Management</b>
-</p>
+![Budgets](https://github.com/user-attachments/assets/5c66c667-140e-4606-a818-cb6aafd5cbc7)
 
 ---
 
 ## 📅 Monthly Limits
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/59affd5e-7321-4556-902f-9bd20e4dceb6" width="230"/>
-</p>
-
-<p align="center">
-  <b>Monthly Spending Limits</b>
-</p>
+![Monthly Limits](https://github.com/user-attachments/assets/59affd5e-7321-4556-902f-9bd20e4dceb6)
 
 ---
 
 ## 🏅 Earn & Learn
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/cf34f46b-d024-4d1c-af76-3280085dc436" width="230"/>
-</p>
-
-<p align="center">
-  <b>Gamified Financial Learning System</b>
-</p>
+![Earn and Learn](https://github.com/user-attachments/assets/cf34f46b-d024-4d1c-af76-3280085dc436)
 
 ---
 
-## 👤 User Profile
+## 👤 Profile
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/00da3fea-cc2c-45a2-8d7e-b1c507de9003" width="230"/>
-</p>
-
-<p align="center">
-  <b>User Profile Screen</b>
-</p>
-```
+![Profile](https://github.com/user-attachments/assets/00da3fea-cc2c-45a2-8d7e-b1c507de9003)
 
 
 
