@@ -14,13 +14,12 @@ The app was designed with students and young professionals in mind — people wh
 
 ## 🎬 Demonstration Video
 
-▶️ **[Watch the full app demo on YouTube](https://youtube.com/(https://youtu.be/v5Hv45jkJYw))**
+▶️ **[Watch the full app demo on YouTube](https://youtu.be/v5Hv45jkJYw)**
 
 > The video demonstrates all features running on a real Android device with a full voice-over walkthrough.
 
 ---
 
-## 📸 Screenshots
 # 📸 Screenshots
 
 ## 🔐 Authentication
@@ -385,7 +384,7 @@ The Pocket Guidance logo features a **blue pocket** (representing savings/wallet
 
 ** Phumudzo Oasis Munyai **
 Student Number: ST10450008
-Module: IMAD 25/26/27
+Module: OPSC6311 
 Institution: The Independent Institute of Education (IIE)
 Year: 2026
 
